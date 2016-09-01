@@ -1,14 +1,3 @@
-# Project
-/excel
-/__DATA
-*.apk
-.git/
-!/.git/
-/data
-/images/data
-/module/_*
-/Core
-
 # Created by .ignore support plugin (hsz.mobi)
 ### Eclipse template
 *.pydevproject
