@@ -108,6 +108,8 @@ define(['jquery', 'bucket', 'DD', 'lib/gaussian'], function ($, bucket, DD, gaus
 
                     star.data('source', pdata.source || 'default');
 
+                    $('<em></em>').text(pdata.name || '').appendTo(starEntity);
+
                     star.css({
                         height: size,
                         width: size,

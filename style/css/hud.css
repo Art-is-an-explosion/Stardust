@@ -1,0 +1,67 @@
+.hud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hud .hud-mask {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.hud .hud-left, .hud .hud-right, .hud .hud-top, .hud .hud-bottom {
+    opacity: 0;
+}
+
+.hud .hud-left, .hud .hud-right {
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hud .hud-left {
+    left: -400px;
+    background-image: url(../images/hud/left.png);
+    background-position: 0 50%;
+}
+
+.hud .hud-right {
+    right: -400px;
+    background-image: url(../images/hud/right.png);
+    background-position: 100% 50%;
+}
+
+.hud .hud-top {
+    width: 160%;
+    position: absolute;
+    top: -360px;
+    left: -30%;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/hud/up.png);
+    background-position: 50% 0;
+}
+
+.hud .hud-bottom {
+    width: 160%;
+    position: absolute;
+    bottom: -360px;
+    left: -30%;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/hud/under.png);
+    background-position: 50% 100%;
+}

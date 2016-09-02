@@ -10,7 +10,9 @@ define(function (require, exports, module) {
     var handle = bucket.__HANDLE__;
     var galaxy = require('common/galaxy');
     var mainIcon = require('common/mainIcon')();
+    var hud = require('common/hud')();
     var showHalo = require('action/showHalo');
+
 
     var DD = require('DD');
 

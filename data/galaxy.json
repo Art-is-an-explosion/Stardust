@@ -160,9 +160,9 @@
       },
       {
         "name": "狮子座 Leo Minor",
-        "source": "default",
-        "color": "rgba(255, 255, 255, 1)",
-        "size": 0.8
+        "source": "alpha",
+        "color": "rgba(255, 100, 100, 1)",
+        "size": 5
       },
       {
         "name": "望远镜座 Triangulum",
@@ -187,7 +187,7 @@
   {
     "angle": 220,
     "radius": 100,
-    "radiation": 100,
+    "radiation": 150,
     "planets": [
       {
         "name": "天燕座 Aquarius",
