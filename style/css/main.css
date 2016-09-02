@@ -36,6 +36,18 @@ body {
     background-color: black;
 }
 
+.logo {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-image: url(../images/LOGO.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0;
+    width: 260px;
+    height: 100px;
+}
+
 .main {
     position: relative;
     height: 100%;

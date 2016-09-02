@@ -8,11 +8,10 @@ define(function (require, exports, module) {
 
     var bucket = require('bucket');
     var handle = bucket.__HANDLE__;
-    var galaxy = require('common/galaxy');
-    var mainIcon = require('common/mainIcon')();
-    var hud = require('common/hud')();
     var showHalo = require('action/showHalo');
-
+    var galaxy = require('common/galaxy');
+    var mainIcon = require('common/mainIcon');
+    var hud = require('common/hud');
 
     var DD = require('DD');
 
@@ -23,8 +22,10 @@ define(function (require, exports, module) {
 
     function switchQueue() {
         handle.galaxy = galaxy();
+        handle.mainIcon = mainIcon()
+        handle.hud = hud();
         new queue()
-            .defer(mainIcon.hide)
+            .defer(handle.mainIcon.hide)
             .defer(showHalo)
             .defer(handle.galaxy.show)
             .awaitAll(function () {

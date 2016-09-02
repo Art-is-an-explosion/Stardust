@@ -31,12 +31,22 @@
 }
 
 .hud .hud-left {
+    -webkit-transform: perspective(400px) rotateY(18deg) translateX(-15px);
+    -moz-transform: perspective(400px) rotateY(18deg) translateX(-15px);
+    -ms-transform: perspective(400px) rotateY(18deg) translateX(-15px);
+    -o-transform: perspective(400px) rotateY(18deg) translateX(-15px);
+    transform: perspective(400px) rotateY(18deg) translateX(-15px);
     left: -400px;
     background-image: url(../images/hud/left.png);
     background-position: 0 50%;
 }
 
 .hud .hud-right {
+    -webkit-transform: perspective(400px) rotateY(-18deg) translateX(15px);
+    -moz-transform: perspective(400px) rotateY(-18deg) translateX(15px);
+    -ms-transform: perspective(400px) rotateY(-18deg) translateX(15px);
+    -o-transform: perspective(400px) rotateY(-18deg) translateX(15px);
+    transform: perspective(400px) rotateY(-18deg) translateX(15px);
     right: -400px;
     background-image: url(../images/hud/right.png);
     background-position: 100% 50%;

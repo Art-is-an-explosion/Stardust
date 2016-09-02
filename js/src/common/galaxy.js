@@ -16,20 +16,27 @@ define(['jquery', 'bucket', 'DD', 'lib/gaussian'], function ($, bucket, DD, gaus
 
         var el = $('.galaxy');
         var groups = el.find('.groups');
+        var planet = el.find('.planet');
 
         var planetData = [];
 
         function show(cb) {
             DD(name + '.show');
-            el.fadeIn(1000, function () {
-                DD(name + '.show');
-                cb && cb.call && cb();
-            });
+            el.show();
+            planet.fadeIn(1000);
+            setTimeout(function () {
+                groups.fadeIn(2000, function () {
+                    DD(name + '.show');
+                    cb && cb.call && cb();
+                });
+            }, 2000);
         }
 
         function hide(cb) {
             DD(name + '.show');
             el.fadeOut(1000, function () {
+                planet.hide();
+                groups.hide();
                 DD(name + '.show');
                 cb && cb.call && cb();
             });
@@ -45,6 +52,7 @@ define(['jquery', 'bucket', 'DD', 'lib/gaussian'], function ($, bucket, DD, gaus
 
         function load() {
             $.get('data/galaxy.json', function (ret) {
+                planetData = ret;
                 console.log(name + '.load', planetData);
                 if (ret.length) {
                     ret.forEach(groupRender);
@@ -87,8 +95,6 @@ define(['jquery', 'bucket', 'DD', 'lib/gaussian'], function ($, bucket, DD, gaus
 
             var x = Math.cos(radian) * (radius / 100) * ecliptic.radius;
             var y = Math.sin(radian) * (radius / 100) * ecliptic.radius;
-
-            console.log(x, y);
 
             var group = $('<div class="group"></div>').appendTo(groups)
                 .css({

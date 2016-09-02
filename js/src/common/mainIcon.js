@@ -7,6 +7,7 @@ define(['jquery', 'DD'], function ($, DD) {
         var name = arguments.callee.name;
 
         function show(cb) {
+            console.log(arguments);
             DD(name + '.show');
             el.fadeIn(1000, function () {
                 DD(name + '.show');
@@ -15,6 +16,7 @@ define(['jquery', 'DD'], function ($, DD) {
         }
 
         function hide(cb) {
+            console.log(arguments);
             DD(name + '.hide');
             el.fadeOut(1000, function () {
                 DD(name + '.hide');
