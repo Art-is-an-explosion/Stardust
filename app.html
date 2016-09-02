@@ -35,7 +35,10 @@
             allowTransparency="true" frameborder="0"></iframe>
 </div>
 <script>
-    $('#frame').attr('src', 'https://modao.cc/app/cNRjNTy2agtN2zg5exNGIkZ1Jxqg5N7/embed').on('load', function () {
+
+    var URL = 'https://modao.cc/app/cNRjNTy2agtN2zg5exNGIkZ1Jxqg5N7/embed';
+
+    $('#frame').attr('src', URL).on('load', function () {
         $(this).show().animate({
             opacity: 1,
             left: '35%'
