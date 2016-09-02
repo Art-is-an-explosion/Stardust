@@ -3,11 +3,11 @@
  */
 
 require(['q/face', 'q/track'], function (face, track) {
-    // face();
-    //
-    // $('.main-icon a').click(function () {
-    //     track();
-    // });
+    face();
 
-    track();
+    $('.main-icon a').click(function () {
+        track();
+    });
+
+    // track();
 });
