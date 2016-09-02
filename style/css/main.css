@@ -40,9 +40,7 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    background: transparent url("../images/41.pic_hd.jpg") no-repeat 50% 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background-color: #000000;
 }
 
 .main .stars > .star {
@@ -84,18 +82,16 @@ body {
 }
 
 @keyframes spin {
-
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(360deg);
     }
 }
 
 .main .mask {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -104,8 +100,8 @@ body {
     opacity: 1;
 }
 
-.main .big-icon {
-    position: fixed;
+.main .main-icon {
+    position: absolute;
     top: 50%;
     left: 50%;
     height: 360px;
@@ -116,4 +112,128 @@ body {
     background-position: 50%;
     -webkit-background-size: 340px;
     background-size: 340px;
+}
+
+.main .main-icon p {
+    margin-top: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: #a1bec9;
+}
+
+.main .main-icon p a {
+    color: #e7f8ff;
+    display: inline-block;
+}
+
+.main .main-icon p a:first-child {
+    font-size: 20px;
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    -o-transform: translateY(1px);
+    transform: translateY(1px);
+}
+
+.main .main-icon p a:last-child {
+    font-size: 19px;
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    -o-transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+
+.main .halo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main .halo > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url(../images/halo.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.main .halo .halo-big {
+    height: 120vmin;
+    width: 120vmin;
+    margin: -60vmin 0 0 -60vmin;
+    -webkit-background-size: 110vmin;
+    background-size: 110vmin;
+    opacity: .13333;
+    -webkit-animation: spin 240s linear infinite;
+    animation: spin 240s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main .halo .halo-small {
+    height: 60vmin;
+    width: 60vmin;
+    margin: -30vmin 0 0 -30vmin;
+    -webkit-background-size: 60vmin;
+    background-size: 60vmin;
+    opacity: .3;
+    -webkit-animation: lspin 120s linear infinite;
+    animation: lspin 120s linear infinite;
+}
+
+@keyframes lspin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.main .galaxy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80vmin;
+    height: 80vmin;
+    margin: -40vmin 0 0 -40vmin;
+}
+
+.main .galaxy > .planet {
+    background-size: 60vmin;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.main .galaxy .planet-default {
+    background-image: url(../images/planet/earth-ignorenew24.png);
+}
+
+.main .galaxy .groups {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: visible;
+    left: 50%;
+    top: 50%;
+}
+
+.main .galaxy .group {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: visible;
 }

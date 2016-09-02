@@ -1,0 +1,22 @@
+{
+  "name": "stardust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Art-is-an-explosion/Stardust.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Art-is-an-explosion/Stardust/issues"
+  },
+  "homepage": "https://github.com/Art-is-an-explosion/Stardust#readme",
+  "dependencies": {
+    "requirejs": "^2.2.0"
+  }
+}

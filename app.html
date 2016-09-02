@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mercedes-benz Stardust</title>
+    <link rel="stylesheet" href="style/css/style.css">
+    <style>
+        .main {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #000000;
+        }
+
+        .main iframe {
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            padding: 0;
+            opacity: 0;
+            -webkit-transform: translate(-258.5px, -499.5px) scale(0.9);
+            -moz-transform: translate(-258.5px, -499.5px) scale(0.9);
+            -ms-transform: translate(-258.5px, -499.5px) scale(0.9);
+            -o-transform: translate(-258.5px, -499.5px) scale(0.9);
+            transform: translate(-258.5px, -499.5px) scale(0.9);
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <iframe id="frame" style="display: none" width="517" height="999"
+            allowTransparency="true" frameborder="0"></iframe>
+</div>
+<script>
+    $('#frame').attr('src', 'https://modao.cc/app/cNRjNTy2agtN2zg5exNGIkZ1Jxqg5N7/embed').on('load', function () {
+        $(this).show().animate({
+            opacity: 1,
+            left: '35%'
+        }, 1000);
+    });
+</script>
+</body>
+</html>
