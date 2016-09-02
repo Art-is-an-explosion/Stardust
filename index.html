@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Welcome to BAE</title>
+    <meta charset="UTF-8">
+    <title>Mercedes-benz Stardust</title>
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/main.css">
+    <link rel="stylesheet" href="style/css/stars.css">
+    <link rel="stylesheet" href="style/css/hud.css">
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+    <!--<script src="js/queue.js"></script>-->
+    <script src="js/require.js"></script>
 </head>
 <body>
-    <h4>Welcome to Baidu App Engine!</h4>
-    <h2>欢迎开启BAE之旅！</h2>
-    <br>
-    <br>
-    <ul>以下链接可能对您有用：</ul>
-    <ul><a href="https://bce.baidu.com/doc/BAE/QuickGuide.html" target="_blank">入门指南</a></ul>
-    <ul><a href="http://developer.baidu.com/forum/topic/list?boardId=66" target="_blank">论坛</a></ul>
-    <ul><a href="http://www.baeblog.com/" target="_blank">技术博客</a></ul>
-    <ul><a href="http://weibo.com/baiduappengine" target="_blank">微博</a></ul>
-    <ul><a href="https://bce.baidu.com/doc/BAE/FAQ.html" target="_blank">常见问题</a></ul>
+<div class="main">
+    <!-- Logo -->
+    <div class="logo z-4"></div>
+    <!-- /Logo -->
+
+    <!-- Global Background -->
+    <canvas id="stardust" class="z-0" style="display: none;"></canvas>
+    <!-- /Global Background -->
+
+    <!-- Mask -->
+    <div class="mask z-4" style="display: none;"></div>
+    <!-- /Mask -->
+
+    <!-- Main icon -->
+    <div class="main-icon z-5" style="display: none;">
+        <p style="display: none;">
+            <a href="javascript:void(0)">START</a> | <a href="javascript:void(0)">开启星空之旅</a>
+        </p>
+    </div>
+    <!-- /Main icon -->
+
+    <!-- Halo -->
+    <div class="halo z-1" style="display: none;">
+        <div class="halo-big" style="display: none;"></div>
+        <div class="halo-small" style="display: none;"></div>
+    </div>
+    <!-- /Halo -->
+
+    <!-- galaxy -->
+    <div class="galaxy z-2" style="display: none">
+        <div class="planet planet-default z-0" style="display: none"></div>
+        <div class="groups z-1" style="display: none"></div>
+    </div>
+    <!-- /galaxy -->
+
+    <!-- hud -->
+    <div class="hud z-3" style="display: none">
+        <div class="hud-bottom z-1"></div>
+        <div class="hud-top z-1"></div>
+        <div class="hud-left z-1"></div>
+        <div class="hud-right z-1"></div>
+        <div class="hud-mask z-0"></div>
+    </div>
+    <!-- /hud -->
+
+</div>
+<div>No one stands at the beginning of the sky, whether you or me, including God, but from now on, I stand by the
+    horizon
+</div>
+<script src="js/src/config.js"></script>
+<script src="js/src/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,297 @@
+[
+  {
+    "angle": 5,
+    "radius": 100,
+    "radiation": 100,
+    "planets": [
+      {
+        "name": "天琴座 Mensa",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 2
+      },
+      {
+        "name": "英仙座 Phoenix",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.5
+      },
+      {
+        "name": "飞鱼座 Vulpecula",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.2
+      },
+      {
+        "name": "天猫座 Lyra",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "雕具座 Camelopardalis",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "天鹅座 Delphinus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "小马座 Eridanus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "箭鱼座  Draco",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "鲸鱼座 Chamaeleon",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.1
+      }
+    ]
+  },
+  {
+    "angle": 70,
+    "radius": 100,
+    "radiation": 100,
+    "planets": [
+      {
+        "name": "孔雀座 Pegasus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 2
+      },
+      {
+        "name": "南极座 Ophiuchus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.5
+      },
+      {
+        "name": "小犬座 Capricornus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.2
+      }
+    ]
+  },
+  {
+    "angle": 70,
+    "radius": 100,
+    "radiation": 100,
+    "planets": [
+      {
+        "name": "孔雀座 Pegasus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 2
+      },
+      {
+        "name": "南极座 Ophiuchus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.5
+      },
+      {
+        "name": "小犬座 Capricornus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.2
+      }
+    ]
+  },
+  {
+    "angle": 100,
+    "radius": 100,
+    "radiation": 100,
+    "planets": [
+      {
+        "name": "时钟座 Hydra",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 2
+      }
+    ]
+  },
+  {
+    "angle": 170,
+    "radius": 100,
+    "radiation": 100,
+    "planets": [
+      {
+        "name": "室女座 Volans ",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 2
+      },
+      {
+        "name": "三角座  Triangulum Australe",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 2
+      },
+      {
+        "name": "盾牌座 Serpens",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.5
+      },
+      {
+        "name": "巨爵座 Crux",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.2
+      },
+      {
+        "name": "长蛇座 Hydrus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "狮子座 Leo Minor",
+        "source": "alpha",
+        "color": "rgba(255, 100, 100, 1)",
+        "size": 5
+      },
+      {
+        "name": "望远镜座 Triangulum",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "天琴座 Mensa",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "双子座 Grus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      }
+    ]
+  },
+  {
+    "angle": 220,
+    "radius": 100,
+    "radiation": 150,
+    "planets": [
+      {
+        "name": "天燕座 Aquarius",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 2
+      },
+      {
+        "name": "白羊座 Auriga",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 2
+      },
+      {
+        "name": "时钟座 Hydra",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.5
+      },
+      {
+        "name": "苍蝇座 Norma",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.2
+      },
+      {
+        "name": "绘架座 Pisces",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "海豚座 Dorado",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "天鸽座 Coma Berenices",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "牧夫座 Caelum",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "人马座 Scorpius",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "玉夫座 Scutum",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "小熊座 Vela",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "巨蛇座 Sextans",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      },
+      {
+        "name": "天鹰座 Ara",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 0.8
+      }
+    ]
+  },
+  {
+    "angle": 340,
+    "radius": 100,
+    "radiation": 100,
+    "planets": [
+      {
+        "name": "孔雀座 Pegasus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 2
+      },
+      {
+        "name": "南极座 Ophiuchus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.5
+      },
+      {
+        "name": "小犬座 Capricornus",
+        "source": "default",
+        "color": "rgba(255, 255, 255, 1)",
+        "size": 1.2
+      }
+    ]
+  }
+]

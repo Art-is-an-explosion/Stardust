@@ -1,0 +1,251 @@
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+.z-3 {
+    z-index: 3;
+}
+
+.z-4 {
+    z-index: 4;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+}
+
+.logo {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-image: url(../images/LOGO.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0;
+    width: 260px;
+    height: 100px;
+}
+
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+}
+
+.main .stars > .star {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    height: 200vmax;
+    width: 200vmax;
+    margin-left: -100vmax;
+    margin-top: -100vmax;
+    backface-visibility: visible;
+    /*background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==);*/
+    /*background-image: url("../images/stars.png");*/
+    /*background-size: 100%;*/
+    /*background-repeat: repeat;*/
+}
+
+.main .stars.rotate .star {
+    -webkit-animation: spin 300s linear infinite;
+    animation: spin 300s linear infinite;
+}
+
+.main .stars .star-l-1 {
+    background-size: 180px;
+}
+
+.main .stars.rotate .star-l-1 {
+    -webkit-animation: spin 300s linear infinite;
+    animation: spin 300s linear infinite;
+}
+
+.main .stars .star-l-2 {
+    background-size: 300px;
+}
+
+.main .stars.rotate .star-l-2 {
+    -webkit-animation: spin 120s linear infinite;
+    animation: spin 120s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 1;
+}
+
+.main .main-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 360px;
+    width: 360px;
+    margin: -180px 0 0 -180px;
+    background-image: url(../images/logo24.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-background-size: 340px;
+    background-size: 340px;
+}
+
+.main .main-icon p {
+    margin-top: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: #a1bec9;
+}
+
+.main .main-icon p a {
+    color: #e7f8ff;
+    display: inline-block;
+}
+
+.main .main-icon p a:first-child {
+    font-size: 20px;
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    -o-transform: translateY(1px);
+    transform: translateY(1px);
+}
+
+.main .main-icon p a:last-child {
+    font-size: 19px;
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    -o-transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+
+.main .halo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main .halo > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url(../images/halo.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.main .halo .halo-big {
+    height: 120vmin;
+    width: 120vmin;
+    margin: -60vmin 0 0 -60vmin;
+    -webkit-background-size: 110vmin;
+    background-size: 110vmin;
+    opacity: .13333;
+    -webkit-animation: spin 240s linear infinite;
+    animation: spin 240s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main .halo .halo-small {
+    height: 60vmin;
+    width: 60vmin;
+    margin: -30vmin 0 0 -30vmin;
+    -webkit-background-size: 60vmin;
+    background-size: 60vmin;
+    opacity: .3;
+    -webkit-animation: lspin 120s linear infinite;
+    animation: lspin 120s linear infinite;
+}
+
+@keyframes lspin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.main .galaxy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80vmin;
+    height: 80vmin;
+    margin: -40vmin 0 0 -40vmin;
+}
+
+.main .galaxy > .planet {
+    background-size: 60vmin;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.main .galaxy .planet-default {
+    background-image: url(../images/planet/earth.png);
+}
+
+.main .galaxy .groups {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: visible;
+    left: 50%;
+    top: 50%;
+}
+
+.main .galaxy .group {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: visible;
+}
