@@ -48,6 +48,27 @@ body {
     height: 100px;
 }
 
+.nav {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background-image: url(../images/nav.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: 100% 0;
+    width: 400px;
+    height: 35px;
+}
+
+.nav .app-link {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 180px;
+}
+
 .main {
     position: relative;
     height: 100%;
