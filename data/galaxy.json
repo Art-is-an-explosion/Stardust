@@ -7,8 +7,8 @@
       {
         "name": "天琴座 Mensa",
         "source": "default",
-        "color": "rgba(255, 255, 255, 1)",
-        "size": 20
+        "color": "rgba(255, 222, 0, 1)",
+        "size": 2
       },
       {
         "name": "英仙座 Phoenix",
@@ -37,7 +37,7 @@
       {
         "name": "天鹅座 Delphinus",
         "source": "default",
-        "color": "rgba(255, 255, 255, 1)",
+        "color": "rgba(255, 222, 0, 1)",
         "size": 0.8
       },
       {
@@ -55,7 +55,7 @@
       {
         "name": "鲸鱼座 Chamaeleon",
         "source": "default",
-        "color": "rgba(255, 255, 255, 1)",
+        "color": "rgba(255, 222, 0, 1)",
         "size": 1.1
       }
     ]
