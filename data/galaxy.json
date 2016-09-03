@@ -1,8 +1,8 @@
 [
   {
     "angle": 5,
-    "radius": 100,
-    "radiation": 100,
+    "radius": 80,
+    "radiation": 200,
     "planets": [
       {
         "name": "天琴座 Mensa",
