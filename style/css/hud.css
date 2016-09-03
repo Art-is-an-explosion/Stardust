@@ -25,28 +25,28 @@
     height: 80%;
     position: absolute;
     top: 10%;
-    width: 400px;
+    width: 33%;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .hud .hud-left {
-    -webkit-transform: perspective(400px) rotateY(18deg) translateX(-15px);
-    -moz-transform: perspective(400px) rotateY(18deg) translateX(-15px);
-    -ms-transform: perspective(400px) rotateY(18deg) translateX(-15px);
-    -o-transform: perspective(400px) rotateY(18deg) translateX(-15px);
-    transform: perspective(400px) rotateY(18deg) translateX(-15px);
+    -webkit-transform: perspective(400px) rotateY(23deg) translateX(-25%);
+    -moz-transform: perspective(400px) rotateY(23deg) translateX(-25%);
+    -ms-transform: perspective(400px) rotateY(23deg) translateX(-25%);
+    -o-transform: perspective(400px) rotateY(23deg) translateX(-25%);
+    transform: perspective(400px) rotateY(23deg) translateX(-25%);
     left: -400px;
     background-image: url(../images/hud/left.png);
     background-position: 0 50%;
 }
 
 .hud .hud-right {
-    -webkit-transform: perspective(400px) rotateY(-18deg) translateX(15px);
-    -moz-transform: perspective(400px) rotateY(-18deg) translateX(15px);
-    -ms-transform: perspective(400px) rotateY(-18deg) translateX(15px);
-    -o-transform: perspective(400px) rotateY(-18deg) translateX(15px);
-    transform: perspective(400px) rotateY(-18deg) translateX(15px);
+    -webkit-transform: perspective(400px) rotateY(-30deg) translateX(-10%);
+    -moz-transform: perspective(400px) rotateY(-30deg) translateX(-10%);
+    -ms-transform: perspective(400px) rotateY(-30deg) translateX(-10%);
+    -o-transform: perspective(400px) rotateY(-30deg) translateX(-10%);
+    transform: perspective(400px) rotateY(-30deg) translateX(-10%);
     right: -400px;
     background-image: url(../images/hud/right.png);
     background-position: 100% 50%;
@@ -65,10 +65,10 @@
 }
 
 .hud .hud-bottom {
-    width: 160%;
+    width: 80%;
     position: absolute;
     bottom: -360px;
-    left: -30%;
+    left: 10%;
     height: 360px;
     background-repeat: no-repeat;
     background-size: contain;

@@ -5,7 +5,6 @@ define(['bucket', 'DD', 'queue'], function (bucket, DD, queue) {
 
     function loadIMG(name, url, cb) {
         var img = new Image();
-        console.log(name, url);
         img.onload = function () {
             IMAGES[name] = img;
             img.onload = null;

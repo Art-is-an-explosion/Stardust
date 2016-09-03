@@ -30,7 +30,6 @@ define(function (require, exports, module) {
             .defer(mainIcon.show)
             .defer(loadData)
             .awaitAll(function () {
-                console.log(1);
                 resourceQueue();
             });
     }

@@ -1,4 +1,6 @@
-define(['jquery', 'bucket', 'DD', 'lib/gaussian'], function ($, bucket, DD, gaussian) {
+define(['jquery', 'bucket', 'DD', 'lib/gaussian', 'common/hud'], function ($, bucket, DD, gaussian, hud) {
+
+    var handle = bucket.__HANDLE__;
 
     var distributed = gaussian(0.8, 1);
 
@@ -10,20 +12,37 @@ define(['jquery', 'bucket', 'DD', 'lib/gaussian'], function ($, bucket, DD, gaus
         radius: 50 // vmin
     };
 
+    var HUD = handle.hud = hud();
+
+    console.log(HUD);
+
     return function galaxy() {
 
         var name = arguments.callee.name;
 
         var el = $('.galaxy');
         var groups = el.find('.groups');
-        var planet = el.find('.planet');
+        var planetDefault = el.find('.planet-default');
+        var planetSource = el.find('.planet-source');
+
+        el.on('click', '.star', function () {
+            var el = $(this);
+            var source = el.data('source');
+            changePlanet(source);
+            HUD.changeTo(source);
+        });
+
+        $('.main').on('click', '.logo', function () {
+            HUD.hide();
+            changePlanet('');
+        });
 
         var planetData = [];
 
         function show(cb) {
             DD(name + '.show');
             el.show();
-            planet.fadeIn(1000);
+            planetDefault.fadeIn(1000);
             setTimeout(function () {
                 groups.fadeIn(2000, function () {
                     DD(name + '.show');
@@ -33,21 +52,40 @@ define(['jquery', 'bucket', 'DD', 'lib/gaussian'], function ($, bucket, DD, gaus
         }
 
         function hide(cb) {
-            DD(name + '.show');
+            DD(name + '.hide');
             el.fadeOut(1000, function () {
-                planet.hide();
-                groups.hide();
-                DD(name + '.show');
+                planetDefault.fadeOut(1000);
+                planetSource.fadeOut(1000);
+                groups.fadeOut(1000);
+                DD(name + '.hide');
                 cb && cb.call && cb();
             });
         }
 
-        function change(cb) {
-            DD(name + '.show');
-            el.fadeIn(1000, function () {
-                DD(name + '.show');
-                cb && cb.call && cb();
-            });
+        function loadDetail(source, cb) {
+            var path = 'style/images/source/' + source + '/';
+            var sourceConfig = {
+                'top': path + 'top.png',
+                'left': path + 'left.png',
+                'right': path + 'right.png',
+                'planet': path + 'planet.png'
+            };
+        }
+
+        function changePlanet(source, cb) {
+            if (source) {
+                var path = 'style/images/source/' + source + '/';
+                planetSource.css({
+                    'background-image': 'url(' + path + 'planet.png)'
+                });
+                planetDefault.fadeOut(1000, function () {
+                    planetSource.fadeIn(1000);
+                });
+            } else {
+                planetSource.fadeOut(1000, function () {
+                    planetDefault.fadeIn(1000);
+                });
+            }
         }
 
         function load() {
@@ -106,7 +144,7 @@ define(['jquery', 'bucket', 'DD', 'lib/gaussian'], function ($, bucket, DD, gaus
                 var distributed = createDistributed(gdata.planets.length, radiation);
 
                 gdata.planets.forEach(function (pdata, i) {
-                    var star = planetRender();
+                    var star = starRender();
                     var starEntity = star.find('.star-entity');
                     var starBlink = star.find('.star-blink');
 
@@ -147,7 +185,7 @@ define(['jquery', 'bucket', 'DD', 'lib/gaussian'], function ($, bucket, DD, gaus
             }
         }
 
-        function planetRender() {
+        function starRender() {
             return $(
                 '<div class="star">' +
                 '<div class="star-entity"></div>' +
@@ -164,8 +202,7 @@ define(['jquery', 'bucket', 'DD', 'lib/gaussian'], function ($, bucket, DD, gaus
 
         return {
             show: show,
-            hide: hide,
-            change: change
+            hide: hide
         }
     }
 

@@ -8,7 +8,7 @@ define(['jquery', 'DD'], function ($, DD) {
 
         function show(cb) {
             DD(name + '.show');
-            el.fadeIn(1000, function () {
+            el.fadeIn(0, function () {
                 DD(name + '.show');
                 cb && cb.call && cb();
             });

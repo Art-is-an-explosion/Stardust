@@ -12,15 +12,6 @@ define(['jquery', 'DD'], function ($, DD) {
 
     return function hud() {
 
-        $('.main').on('click', '.logo', function () {
-            hide();
-        });
-
-        $('.main').on('click', '.star', function () {
-            console.log($(this));
-            show();
-        });
-
         var name = arguments.callee.name;
 
         function show(cb) {
@@ -56,12 +47,12 @@ define(['jquery', 'DD'], function ($, DD) {
         function hide(cb) {
             DD(name + '.hide');
             HUDLeft.animate({
-                left: -400,
+                left: '-33%',
                 opacity: 0
             }, 800, 'swing');
 
             HUDRight.animate({
-                right: -400,
+                right: '-33%',
                 opacity: 0
             }, 800, 'swing');
 
@@ -79,13 +70,35 @@ define(['jquery', 'DD'], function ($, DD) {
 
                 HUD.hide();
             });
+        }
 
-
+        function changeTo(source, cb) {
+            if (source) {
+                var path = 'style/images/source/' + source + '/';
+                HUDLeft.css({
+                    'background-image': 'url(' + path + 'left.png)'
+                });
+                HUDRight.css({
+                    'background-image': 'url(' + path + 'right.png)'
+                });
+                HUDTop.css({
+                    'background-image': 'url(' + path + 'top.png)'
+                });
+            } else {
+                [HUDLeft, HUDRight, HUDTop].forEach(function (el) {
+                    el.css({
+                        'background-image': ''
+                    });
+                });
+            }
+            show();
+            cb && cb.call && cb();
         }
 
         return {
             show: show,
-            hide: hide
+            hide: hide,
+            changeTo: changeTo
         }
     }
 });

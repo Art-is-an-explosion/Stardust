@@ -11,7 +11,6 @@ define(function (require, exports, module) {
     var showHalo = require('action/showHalo');
     var galaxy = require('common/galaxy');
     var mainIcon = require('common/mainIcon');
-    var hud = require('common/hud');
 
     var DD = require('DD');
 
@@ -22,8 +21,7 @@ define(function (require, exports, module) {
 
     function switchQueue() {
         handle.galaxy = galaxy();
-        handle.mainIcon = mainIcon()
-        handle.hud = hud();
+        handle.mainIcon = mainIcon();
         new queue()
             .defer(handle.mainIcon.hide)
             .defer(showHalo)
