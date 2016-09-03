@@ -26,6 +26,18 @@
             -o-transform: translate(-258.5px, -499.5px) scale(0.9);
             transform: translate(-258.5px, -499.5px) scale(0.9);
         }
+
+        .main #qrcode {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            width: 150px;
+            height: 150px;
+            margin-top: -90px;
+            padding: 15px;
+            opacity: 0;
+            background-color: #FFFFFF;
+        }
     </style>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
@@ -33,6 +45,7 @@
 <div class="main">
     <iframe id="frame" style="display: none" width="517" height="999"
             allowTransparency="true" frameborder="0"></iframe>
+    <div id="qrcode"><img src="style/images/qrcode.png"/></div>
 </div>
 <script>
 
@@ -42,7 +55,11 @@
         $(this).show().animate({
             opacity: 1,
             left: '35%'
-        }, 1000);
+        }, 1000, function () {
+            $('#qrcode').animate({
+                opacity: 1
+            }, 1000);
+        });
     });
 </script>
 </body>
