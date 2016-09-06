@@ -14,8 +14,6 @@ define(['jquery', 'bucket', 'DD', 'lib/gaussian', 'common/hud'], function ($, bu
 
     var HUD = handle.hud = hud();
 
-    console.log(HUD);
-
     return function galaxy() {
 
         var name = arguments.callee.name;
